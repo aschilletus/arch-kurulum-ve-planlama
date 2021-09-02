@@ -1,0 +1,38 @@
+YAY KURULUM:
+
+Kurulumu başlamadan önce yazılımın bir kopyasını indirmemiz gerekiyor ve daha sonra küçük kurulum adımlarını izlemek gerekiyor. Öncelikle terminal i açalım ve aşağıdaki kodları sırasıyla girelim.
+
+YAY indirme:
+
+git clone https://aur.archlinux.org/yay.git
+Terminali nerede başlattıysak orada “yay” adında klasör oluşması gerek. Yay klasörünü giriş yapıyoruz.
+
+cd yay
+Yay klasörü içerisindeki kodları derliyoruz.
+
+makepkg -si
+Bu adımlardan sonra yay kurulmuş olması gerekiyor. Şimdi de aur dan yazılım kurabiliriz.
+
+AUR KOMUTLARI
+
+Aur paket yükleyici olarak yay kullanılmıştır. Başka bir yükleyici kullanıyorsanız yay yerine kullandığınızı yazmanız yeterli. Daha fazla bilgi için kullandığınız yardımcı yükleyici belgelerine başvurunuz.
+
+Aur Paket Listesi
+Aur deposundan paket yüklemek:
+
+yay -S paket_adi
+Yay kullanarak paket kaldırmak:
+
+yay -Rns paket_adi
+Paket arama:
+
+yay paket_adi
+Aur paketlerini güncelleme:
+
+yay -Syu
+Sisteminizde gereksiz tüm bağımlılıkları kaldırmak :
+
+yay -Yc
+Yay kullanarak sistem istatistiklerini yazdırır:
+
+yay -Ps
